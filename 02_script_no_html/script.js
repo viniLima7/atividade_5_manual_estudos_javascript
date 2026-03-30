@@ -1,0 +1,1 @@
+alert("Olá! Este é o JavaScript rodando fora do HTML")
