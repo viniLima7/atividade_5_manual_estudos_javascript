@@ -98,14 +98,6 @@ Switch
 A condicional switch avalia uma expressão, combinando o valor da expressão para um cláusula case, e executa as instruções associadas ao case.
 
 
-# Funções
-
-Uma função é um bloco de código reutilizável que executa uma tarefa específica.
-A declaração de uma função é feita com function, seguida do nome, parênteses e chaves, onde fica o código que será executado.
-    A chamada de uma função acontece ao usar o nome dela seguido de parênteses, fazendo com que o código interno seja executado.
-        Uma função com parâmetro recebe valores dentro dos parênteses, permitindo trabalhar com dados externos.
-            Uma função com retorno utiliza return para devolver um valor, que pode ser armazenado ou usado em outra parte do código.
-
 # Estruturas de repetição 6
 
 ## For
@@ -150,14 +142,22 @@ Uma expressão avaliada antes de cada passagem através do laço. Se essa condi�
 
 Uma declaração que é executada enquanto a condição é avaliada como verdadeira. Para executar multiplas declarações dentro de um laço, use uma declaração em bloco ({ ... }) para agrupar essas declarações.
 
+# Funções 7
+
+Uma função é um bloco de código reutilizável que executa uma tarefa específica.
+A declaração de uma função é feita com function, seguida do nome, parênteses e chaves, onde fica o código que será executado.
+    A chamada de uma função acontece ao usar o nome dela seguido de parênteses, fazendo com que o código interno seja executado.
+        Uma função com parâmetro recebe valores dentro dos parênteses, permitindo trabalhar com dados externos.
+            Uma função com retorno utiliza return para devolver um valor, que pode ser armazenado ou usado em outra parte do código.
+
+
 # Manipulação de página com JavaScript 8
-O document representa toda a página HTML carregada no navegador e é a partir dele que conseguimos acessar e modificar os elementos da página. Para selecionar elementos, pode ser usado o getElementById(), que busca pelo id de forma rápida, ou o querySelector(), que é mais moderno e permite usar seletores CSS. Quando precisamos pegar vários elementos ao mesmo tempo, usamos o querySelectorAll().
+O document representa toda a página HTML carregada no navegador e é a partir dele que conseguimos acessar e modificar os elementos da página. Para selecionar elementos, pode ser usado o getElementById(), que busca pelo id de forma rápida, ou o querySelector(), que é mais moderno e permite usar seletores CSS. E o querySelectorAll() é usado quando precisa-se pegar vários elementos ao mesmo tempo.
+A .value serve para pegar ou alterar o que o usuário digitou em um campo, enquanto a .checked mostra se um checkbox ou botão está marcado. Já o checkValidity() ajuda a verificar se os dados foram preenchidos corretamente em um formulário.
 
-Nos formulários, algumas propriedades são bem úteis. A .value serve para pegar ou alterar o que o usuário digitou em um campo, enquanto a .checked mostra se um checkbox ou botão está marcado. Já o checkValidity() ajuda a verificar se os dados foram preenchidos corretamente.
+Para mexer no conteúdo da página, o .textContent, pode alterar o texto de um elemento. O visual pode ser ajustado com o .style, assim modificando cores, tamanhos... O classList ajuda a adicionar ou remover classes CSS, facilitando a mudança de estilos.
 
-Para mexer no conteúdo da página, usamos o .textContent, que altera o texto de um elemento. Também podemos mudar o visual com o .style, que permite modificar cores, tamanhos e outras propriedades diretamente. O classList ajuda a adicionar ou remover classes CSS, facilitando a mudança de estilos.
+Além disso, o addEventListener(), pode detectar cliques e outras interações, assim respondendo às ações do usuário. E o DOMContentLoaded garante que o código só vai rodar depois que a página carregar completamente.
 
-Além disso, o JavaScript permite responder às ações do usuário usando o addEventListener(), que pode detectar cliques e outras interações. O DOMContentLoaded garante que o código só vai rodar depois que a página carregar completamente.
-
-Por fim, também dá para criar e remover elementos na página. O createElement() cria novos elementos, o appendChild() adiciona eles na página, e o remove() serve para excluir elementos. Tudo isso faz com que o site fique mais dinâmico e funcional.n
+Já o createElement() cria novos elementos, o appendChild() adiciona eles na página, e o remove() serve para excluir elementos. Assim fazendo o site ficar mais funcional.
 
